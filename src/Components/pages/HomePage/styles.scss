@@ -1,0 +1,88 @@
+.homepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #25aae1;
+    h1{
+        color:  #fc6076;
+        font-size:35px;
+        animation: scale 3s infinite;
+    }
+    .hompage-button{
+        width: 150px;
+        font-size: 20px;
+        color: #fc6076;
+        background:transparent;
+        height: 50px;
+        border: 2px solid #fc6076;
+        border-radius: 10px;
+        cursor:pointer;
+        animation: scale 3s infinite;
+    }
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+// @media (prefers-color-scheme: light) {
+//     .homepage{
+//         height: 100vh;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         background: #25aae1;
+//         h1{
+//             color:  #fc6076;
+//             font-size:35px;
+//             animation: scale 3s infinite;
+//         }
+//         .hompage-button{
+//             width: 150px;
+//             font-size: 20px;
+//             color: #fc6076;
+//             background:transparent;
+//             height: 50px;
+//             border: 2px solid #fc6076;
+//             border-radius: 10px;
+//             cursor:pointer;
+//             animation: scale 3s infinite;
+//         }
+//     }
+// }
+// @media (prefers-color-scheme: dark) {
+//     .homepage{
+//         height: 100vh;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         background: #141414;
+//         h1{
+//             color:  #fff;
+//             font-size:35px;
+//             animation: scale 3s infinite;
+//         }
+//         .hompage-button{
+//             width: 150px;
+//             font-size: 20px;
+//             color: #fff;
+//             background:transparent;
+//             height: 50px;
+//             border: 2px solid #fc6076;
+//             border-radius: 10px;
+//             cursor:pointer;
+//             animation: scale 3s infinite;
+//         }
+//     }
+// }

@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import * as routes from './Routes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path='/homepage' exact component={routes.AsyncHome} />
+      <Route path='/shop' exact component={routes.AsyncShop} />
+      <Redirect exact from="/" to="/homepage" />
+    </Switch>
+  </BrowserRouter>
+)
 
 export default App;

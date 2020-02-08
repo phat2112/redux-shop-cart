@@ -1,0 +1,37 @@
+.shop-container{
+    width:100%;
+    height:auto;
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+}
+.popup-cart{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    font-size: 18px;
+    font-weight:400;
+    color: #fc6076;
+    background: transparent;
+    border: 2px solid #fc6076;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background:#fc6076;
+        color:#fff;
+    }
+}
+.list-shop-cart{
+    position:absolute;
+    top: 40%;
+    right: 10%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:20%;
+    h1{
+        color: #fc6076;
+    }
+}
