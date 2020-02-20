@@ -1,0 +1,63 @@
+.popup-payment {
+  width: 800px;
+  .ant-modal-content {
+    width: 880px;
+  }
+  h1 {
+    text-align: center;
+    color: #096dd9;
+  }
+  table {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    thead {
+      font-size: 20px;
+      text-align: center;
+    }
+    tbody {
+      td {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+.product-column {
+  width: 40%;
+}
+.modal-payment-option {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  .payment-offline {
+    border: none;
+    margin-right: 20px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgba(#096dd9, .2);
+    transition: .4s;
+    &:hover {
+      border: 1px solid rgba(#096dd9, .2);
+      background:transparent;
+      color: #096dd9;
+    }
+  }
+  .payment-online {
+    border: none;
+    margin-right: 20px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgba(#096dd9, .2);
+    transition: .4s;
+    &:hover {
+      border: 1px solid rgba(#096dd9, .2);
+      background:transparent;
+      color: #096dd9;
+    }
+  }
+}

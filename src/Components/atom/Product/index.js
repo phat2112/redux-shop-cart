@@ -4,10 +4,11 @@ import { Product } from 'Utils/items'
 // import Nokia from 'Assets/images/Nokia.jpg'
 // import Sony from 'Assets/images/Sony.jpg'
 // import Samsung from 'Assets/images/Samsung.jpg'
-
+import {useHistory} from 'react-router-dom'
 import './styles.scss'
 
 const ShopProduct = ({ handleAddToCart }) => {
+    const history = useHistory()
     return (
         <div className="Product">
             <div className='Product-title'>

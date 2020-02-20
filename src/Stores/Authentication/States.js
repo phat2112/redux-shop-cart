@@ -1,5 +1,4 @@
 const INITIAL_STATE = {
-    cart: [],
-    totalValue: 0
+    token: '',
 }
 export default INITIAL_STATE

@@ -3,7 +3,7 @@ import INITIAL_STATE from './States'
 import {storeCart} from 'Utils/storage'
 
 const ShopCartReducers = (state = INITIAL_STATE, action) => {
-    console.log('state', state)
+    console.log('action',action)
     switch (action.type) {
         case ACTION.ADD_TO_CART:
             // add item in reducer
@@ -12,7 +12,6 @@ const ShopCartReducers = (state = INITIAL_STATE, action) => {
             let newCart = [...state.cart] 
             if(newCart.length > 0){
                const itemAdded =  newCart.find(item =>  item.id === newItems.id)
-               console.log('same id', itemAdded)
                if(!itemAdded){
                    newCart.push(newItems)
                }else{
@@ -32,7 +31,6 @@ const ShopCartReducers = (state = INITIAL_STATE, action) => {
         case ACTION.REMOVE_TO_CART:
             //remove item
             let cartRemoved = Object.assign([], action.productRemoved)
-            console.log('action remove', action.productRemoved)
             let currentCart= [...state.cart]
             if(currentCart.length > 0){
                 let newCartAfterRemove = currentCart.filter(item => item.id !== cartRemoved.id)
@@ -44,6 +42,12 @@ const ShopCartReducers = (state = INITIAL_STATE, action) => {
             }
             return {
                   ...state, 
+            }
+        case ACTION.SET_TOTAL:
+            let newTotalValue = action.valueItem.price * action.valueItem.quantity
+            return{
+                ...state,
+                totalValue: newTotalValue,
             }
         default:
             return state

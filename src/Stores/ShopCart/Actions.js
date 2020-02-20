@@ -8,7 +8,12 @@ const removeCart = productRemoved => ({
     type: ACTION.REMOVE_TO_CART,
     productRemoved
 })
+const total = valueItem => ({
+    type: ACTION.SET_TOTAL,
+    valueItem,
+})
 export {
     addToCart,
     removeCart,
+    total,
 }
