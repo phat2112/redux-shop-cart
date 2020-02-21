@@ -62,7 +62,7 @@ const Dashboardtemplate = props => {
              <Panel header="Shop Page" key="1" className='menu-item-dropdown'>
                  <Link to='/shop'><Icon type="shopping" /> Shop</Link>
                  <Link to='#'> <Icon type="shopping-cart" />My Cart</Link>
-                 <Link to='/product-detail'>Product List</Link>
+                 <Link to='/product-list'>Product List</Link>
              </Panel>
             </Collapse>
             <Link to ='/' className='admin-content-link'>Icon</Link>

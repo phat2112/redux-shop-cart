@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom'
 import PrivateTemplate from 'Components/Templates/Admin'
 
 const AuthTemplateContainer = ({component: Component, ...rest}) => {
-    const token = localStorage.getItem('token')
+    const token = sessionStorage.getItem('token')
     if(!token){
         return window.location.href = '/login'
     }

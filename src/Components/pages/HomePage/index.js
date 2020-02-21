@@ -32,7 +32,7 @@ const LoginForm = ({form, login, userToken}) => {
       };
     let history = useHistory()
     useEffect(() => {
-        let token = localStorage.getItem('token')
+        let token = sessionStorage.getItem('token')
       if(token){
         history.push('/shop')
       }
